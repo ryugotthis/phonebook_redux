@@ -1,38 +1,60 @@
-.App {
+.title {
+  font-size: 50px;
+  background-color: pink;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* main-box  */
+.main-box {
+  display: flex;
+  margin: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-box .add {
+  width: 50%;
+  height: 300px;
+  background-color: pink;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: center; */
+}
+.main-box .add,
+.main-box .add input,
+.main-box .add button {
+  margin: 5px 0;
+}
+.main-box .add input {
+  padding: 7px;
+}
+.main-box .add button {
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-box .contact-list {
+  /* display: flex; */
+  /* background-color: yellow; */
+  padding: 10px;
+}
+.main-box .contact-list input {
+  padding: 7px;
+  /* background-color: aqua; */
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.main-box .contact-list button {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  /* border: none; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-item {
+  display: flex;
+  padding: 20px;
+}
+.contact-item img {
+  width: 60px;
+  margin-right: 15px;
 }
